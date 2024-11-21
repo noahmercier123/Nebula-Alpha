@@ -1,0 +1,42 @@
+/* Center the loader */
+.container {
+  text-align: center;
+    }
+    
+.loadingthing {
+  display: flex;
+  margin-top: 40vh;
+  border: 1px solid blue;
+  align-items: center;
+  justify-content: center;
+    }
+    
+.dot {
+  width: 20px;
+  height: 20px;
+  background: #3498db;
+  border-radius: 50%;
+  margin: 5px;
+  animation: animationthingy 0.5s ease infinite alternate;
+}
+
+.dot1 {
+  animation-delay: 0.1s;
+}
+
+.dot2 {
+  animation-delay: 0.2s;
+}
+
+.dot3 {
+  animation-delay: 0.3s;
+}
+
+@keyframes animationthingy {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
