@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nebula</title>
+       <link rel="icon" href="https://www.svgrepo.com/show/529729/moon.svg" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs-n7WB9LPD-yQIe8X-zdXnkw_z7WkN1vhWiI0S-6b6RnN9St2fOkiIy4Uc0QFMCCWlWg&usqp=CAU');
+            background-size: cover;
+            background-attachment: fixed;
+            opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+            animation: fadeIn 2s forwards; /* Fade-in animation */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .title, .title2, .button-bar, .site-title, .button, .input[type="text"], .montserrat-textbox, .center-input {
+            animation: fadeIn 2s forwards; /* Apply fade-in animation to all elements */
+        }
+
+        .title {
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            font-size: 50pt;
+            margin-bottom: 0;
+        }
+
+        .title2 {
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            font-size: 25pt;
+            margin-top: 0;
+        }
+
+        .button-bar {
+            background-color: rgba(255, 255, 255, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .site-title {
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-size: 30px;
+            display: flex;
+            align-items: center; /* Aligns logo and text vertically */
+        }
+
+        .logo {
+            width: 50px; /* Adjust the size as needed */
+            height: auto;
+            margin-right: 10px; /* Space between logo and title */
+        }
+
+        .button {
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-decoration: none;
+            border: none;
+            background: none;
+            cursor: pointer;
+            margin: 0 10px;
+            font-size: 15pt;
+            transition: all 0.3s;
+        }
+
+        .button:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .input[type="text"] {
+            width: 200px;
+            height: 30px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 10px;
+            font-family: 'Montserrat', sans-serif;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+            color: white;
+        }
+
+        .montserrat-textbox {
+            font-family: 'Montserrat', sans-serif;
+            width: 200px;
+            height: 30px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 15pt;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .center-input {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // Check if user is authenticated
+        if (!sessionStorage.getItem('authenticated')) {
+            window.location.href = '../password.html'; // Redirect to password page if not authenticated
+        }
+    </script>
+
+    <div class="button-bar">
+        <div class="site-title">
+            <a href="home.html"> <!-- Make the logo a link -->
+                    <img src="https://www.svgrepo.com/show/529729/moon.svg" alt="Logo" class="logo"> <!-- Replace with your logo URL -->
+                </a>
+                Nebula
+        </div>
+        <div>
+            <a href="../home.html" class="button">Home</a>
+            <a href="../games/games.html" class="button">Games</a>
+            <a href="../apps/apps.html" class="button">Apps</a>
+            <a href="web.html" class="button">Web</a>
+              <a href="../settings/settings.html" class="button">Settings</a>
+        </div>
+    </div>
+    <div>
+        <h1 class="title">Nebula</h1>
+        <h1 class="title2">Web</h1>
+        <a href="../Tweb/tweb.html" class="button center-input">Dive into the web</a>
+    </div>
+  
+</body>
+</html>

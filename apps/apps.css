@@ -1,0 +1,196 @@
+body {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs-n7WB9LPD-yQIe8X-zdXnkw_z7WkN1vhWiI0S-6b6RnN9St2fOkiIy4Uc0QFMCCWlWg&usqp=CAU");
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+    animation: fadeIn 2s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.title,
+.title2,
+.button-bar,
+.site-title,
+.button,
+.input[type="text"],
+.montserrat-textbox,
+.center-input {
+    animation: fadeIn 2s forwards; /* Apply fade-in animation to all elements */
+}
+
+.title {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 50pt;
+    margin-bottom: 0;
+}
+
+.title2 {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: 25pt;
+    margin-top: 0;
+}
+
+.button-bar {
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.site-title {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    display: flex;
+    align-items: center; /* Aligns logo and text vertically */
+}
+
+.logo {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+    margin-right: 10px; /* Space between logo and title */
+}
+
+.button {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 15pt;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.input[type="text"] {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+.montserrat-textbox {
+    font-family: "Montserrat", sans-serif;
+    width: 200px;
+    height: 30px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 15pt;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.center-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Loader */
+.container {
+    text-align: center;
+}
+
+.loadingthing {
+    display: flex;
+    margin-top: 40vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    margin: 5px;
+    animation: animationthingy 0.5s ease infinite alternate;
+}
+
+.dot1 {
+    animation-delay: 0.1s;
+}
+
+.dot2 {
+    animation-delay: 0.2s;
+}
+
+.dot3 {
+    animation-delay: 0.3s;
+}
+
+@keyframes animationthingy {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Game Placeholders */
+a {
+    text-decoration: none;
+}
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Space between items */
+    padding: 20px;
+}
+
+.game-item {
+    text-align: center;
+}
+
+.game-image {
+    border-radius: 10px; /* Makes the images rounded */
+    width: 150px; /* Fixed size for the images */
+    height: 150px; /* Fixed size for the images */
+    object-fit: cover; /* Ensures images fit nicely */
+}
+
+/* Game Title */
+.game-title {
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.game-desc {
+    text-decoration: none;
+    color: white;
+    margin-top: 2.5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+}
