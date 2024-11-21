@@ -1,0 +1,80 @@
+body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs-n7WB9LPD-yQIe8X-zdXnkw_z7WkN1vhWiI0S-6b6RnN9St2fOkiIy4Uc0QFMCCWlWg&usqp=CAU');
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0; /* Initially set opacity to 0 for fade-in effect */
+    animation: fadeIn 2s forwards; /* Fade-in animation */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.title {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 50pt;
+    margin: 0;
+}
+
+.h2 {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 20pt;
+    margin: 0;
+}
+
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input {
+    padding: 0 17px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 40vw;
+    border-radius: 5px;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    height: 48px;
+    background: none;
+    outline: none;
+    color: white;
+}
+
+.button {
+    margin-top: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    font-size: 15pt;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.alert {
+    color: red;
+    margin-top: 10px;
+    display: none;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Your Game</title>
+</head>
+
+<body>
+    <script>
+        // Check if user is authenticated
+        if (!sessionStorage.getItem('authenticated')) {
+            window.location.href = 'password.html'; // Redirect to password page if not authenticated
+        }
+    </script>
+
+    <a href="index.html"></a>
+    <div class="button-bar">
+        <button class="button" onclick="opengame()">Open Web</button>
+    </div>
+    </div>
+</body>
+
+</html>
